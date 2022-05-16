@@ -11,11 +11,12 @@ const uiSlice = createSlice({
       state.notification = {
         status: action.payload.status,
         title: action.payload.title,
-        message: action.payload.message
+        message: action.payload.message,
       };
     },
   },
 });
 
 export const uiActions = uiSlice.actions;
+
 export default uiSlice;
